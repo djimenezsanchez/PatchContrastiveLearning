@@ -15,7 +15,7 @@ For more information about this tool please refer to this <a href="arxiv.org/abs
 Authors: Daniel Jiménez-Sánchez, Mikel Ariz, Hang Chang, Xavier Matias-Guiu, Carlos E. de Andrea, Carlos Ortiz-de-Solórzano.
 
 <div align="center">
-  <img width="90%" alt="Patch contrastive learning" src="https://github.com/djimenezsanchez/PatchContrastiveLearning/blob/main/images/2020_06_15_PCL_GITHUB.gif">
+  <img width="90%" alt="Patch contrastive learning" src="https://github.com/djimenezsanchez/PatchContrastiveLearning/blob/main/images/PCL_GITHUB.gif">
 </div>
 <div align="center">
   An illustration of Patch Contrastive Learning. 
