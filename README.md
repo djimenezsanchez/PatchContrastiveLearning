@@ -1,13 +1,32 @@
-# NaroNet: objective-based learning of the tumor microenvironment from multiplex imaging.
-Trained only with patient-level labels, NaroNet quantifies the phenotypes, neighborhoods, and neighborhood interactions that have the highest influence on the predictive task. This is the python implementation as described in our [*paper*](https://arxiv.org/abs/2103.05385).  
+# Patch contrastive learning (PCL)
 
-![alt text](https://github.com/djimenezsanchez/NaroNet/blob/main/models/MethodDescription.png?raw=true)
+This implementation exhaustively finds biology differences within the image dataset using a self-supervised contrastive learning paradigm. When PCL is trained, the dataset is divided into image patches which are encoded into enriched patch embeddings. Image patch embeddings consists of n-dimensional vectors whose euclidean distances are lowest when referring to similar biology structures and the highest when they contain different biology structures.
 
-### Installation
-This package requires Python 3.6 (or newer)
-Please first install TensorFlow (either TensorFlow 1 or 2) and Pytorch (v.1.4.0 or newer) by following the official instructions. For GPU support, it is crucial to install the specific versions of CUDA that are compatible with the respective version of TensorFlow and Pytorch.
+***Applications:*** 
+They are especially useful when data is scarce and can be utilized in custom-made machine learning pipelines with very different objectives:   
+  - Discovery of new biological structures
+  - Measurement of biological structures across subject-types (e.g., treated vs. control)
+  - Patient outcome prediction
+  - Subject regression analysis
+  - etc.
 
-To install NaroNet:
-```sh
-pip install NaroNet
-```
+For more information about this tool please refer to this <a href="arxiv.org/abs/2103.05385">Paper</a>. 
+Authors: Daniel Jiménez-Sánchez, Mikel Ariz, Hang Chang, Xavier Matias-Guiu, Carlos E. de Andrea, Carlos Ortiz-de-Solórzano.
+
+<div align="center">
+  <img width="90%" alt="Patch contrastive learning" src="https://github.com/djimenezsanchez/PatchContrastiveLearning/blob/main/images/2020_06_15_PCL_GITHUB.gif">
+</div>
+<div align="center">
+  An illustration of Patch Contrastive Learning. 
+</div>
+
+ 
+### Data download
+
+To replicate the paper's experiments on a endometrial cancer 7-marker image dataset, first download the images following the [link (download Example_POLE.zip)](https://zenodo.org/record/4630664#.YFoGLa9KiUk).
+
+When downloaded, add the images to the folder 'Examples/Example_POLE/'.
+
+### Usage 
+
+Run main.py 
