@@ -1,4 +1,13 @@
-# Patch Contrastive Learning (PCL)
-Self-supervised pretraining followed by supervised fine-tuning has seen great success in image recognition, especially when labeled examples are scarce, which is the usual case with medical image data. Following this paradigm, we proposed PCL, a self-supervised learning that inputs image crops and outputs enriched feature vectors.
+# NaroNet: objective-based learning of the tumor microenvironment from multiplex imaging.
+Trained only with patient-level labels, NaroNet quantifies the phenotypes, neighborhoods, and neighborhood interactions that have the highest influence on the predictive task. This is the python implementation as described in our [*paper*](https://arxiv.org/abs/2103.05385).  
 
-Work in progress...
+![alt text](https://github.com/djimenezsanchez/NaroNet/blob/main/models/MethodDescription.png?raw=true)
+
+### Installation
+This package requires Python 3.6 (or newer)
+Please first install TensorFlow (either TensorFlow 1 or 2) and Pytorch (v.1.4.0 or newer) by following the official instructions. For GPU support, it is crucial to install the specific versions of CUDA that are compatible with the respective version of TensorFlow and Pytorch.
+
+To install NaroNet:
+```sh
+pip install NaroNet
+```
