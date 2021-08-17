@@ -10,7 +10,7 @@ They are especially useful when data is scarce and can be utilized in custom-mad
   - Subject regression analysis
   - etc.
 
-For more information about this tool please refer to this <a href="arxiv.org/abs/2103.05385">Paper</a>. 
+For more information about this tool please refer to this <a href="https://arxiv.org/abs/2103.05385">Paper</a>. 
 
 Authors: Daniel Jiménez-Sánchez, Mikel Ariz, Hang Chang, Xavier Matias-Guiu, Carlos E. de Andrea, Carlos Ortiz-de-Solórzano.
 
